@@ -1,0 +1,25 @@
+name: Lint & Format
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Selene (Luau Linter)
+        uses: lunarvim/selene-action@v1
+        with:
+          args: --config selene.toml src
+
+      - name: Run StyLua (Formatter Check)
+        uses: JohnnyMorganz/stylua-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: latest
+          args: --check --config stylua.toml src
