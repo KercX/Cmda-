@@ -1,6 +1,6 @@
 # Cmda
 
-[](https://github.com/KercX/Cmda/blob/main/assets/IMG_9406.jpeg)
+![Cmda](https://github.com/KercX/Cmda/blob/main/assets/IMG_9406.jpeg)
 
 
 **Cmda** is a modern, lightweight, and highly extensible command framework for Roblox, written in Luau.
