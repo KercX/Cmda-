@@ -126,7 +126,7 @@ end)
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
 
-    if input.KeyCode == Enum.KeyCode.Backquote then
+    if input.KeyCode == Enum.KeyCode.F2 then
         mainFrame.Visible = not mainFrame.Visible
 
         if mainFrame.Visible then
@@ -135,7 +135,7 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
         end
     end
 
-    if input.KeyCode == Enum.KeyCode.Escape and mainFrame.Visible then
+    if input.KeyCode == Enum.KeyCode.F2 and mainFrame.Visible then
         mainFrame.Visible = false
     end
 end)
